@@ -1,0 +1,18 @@
+---
+
+os: osx
+
+compiler: gcc
+
+language:
+  - c
+  - ruby
+
+install:
+  - gem install rubocop
+  - make test
+
+script:
+  - rubocop config mrblib test
+  - mruby/bin/mrbtest
+  - build/bin/radio-tune-test

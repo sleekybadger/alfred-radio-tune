@@ -141,7 +141,11 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>TODO</string>
+	<string>
+    Identify easily music that is playing on your myTunerRadio.
+
+For more information visit https://github.com/sleekybadger/alfred-radio-tune
+  </string>
 	<key>uidata</key>
 	<dict>
 		<key>23624AD0-6DEF-4DAE-8DF4-DBBBD1C3AF63</key>

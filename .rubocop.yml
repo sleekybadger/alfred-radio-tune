@@ -1,0 +1,35 @@
+---
+
+Naming/RescuedExceptionsVariableName:
+  PreferredName: exception
+
+Lint/UriEscapeUnescape:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/ModuleFunction:
+  EnforcedStyle: extend_self
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%": "{}"

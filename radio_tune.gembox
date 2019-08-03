@@ -1,0 +1,34 @@
+MRuby::GemBox.new do |conf|
+  conf.gem core: "mruby-bin-mrbc"
+
+  conf.gem core: "mruby-kernel-ext"
+  conf.gem core: "mruby-toplevel-ext"
+
+  conf.gem core: "mruby-hash-ext"
+  conf.gem core: "mruby-array-ext"
+  conf.gem core: "mruby-symbol-ext"
+  conf.gem core: "mruby-string-ext"
+  conf.gem core: "mruby-object-ext"
+
+  conf.gem core: "mruby-io"
+  conf.gem core: "mruby-time"
+  conf.gem core: "mruby-print"
+  conf.gem core: "mruby-metaprog"
+
+  conf.gem github: "iij/mruby-regexp-pcre"
+
+  conf.gem mgem: "env"
+  conf.gem mgem: "getopts"
+  conf.gem mgem: "uri-parser"
+  conf.gem mgem: "sqlite"
+  conf.gem mgem: "mruby-pjson"
+
+  if Environment.debug?
+    conf.gem core: "mruby-bin-mirb"
+    conf.gem core: "mruby-bin-debugger"
+
+    conf.gem mgem: "mruby-tempfile"
+    conf.gem mgem: "mruby-mtest"
+    conf.gem core: "mruby-test"
+  end
+end

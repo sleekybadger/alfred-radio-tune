@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+VERSION="$(cat config/application.rb \
+            | ggrep -Po 'VERSION = "(.+)".freeze' \
+            | ggrep -Po '[0-9]+\.[0-9]+\.[0-9]+')"
+
+TMP_DIR="$(mktemp -d)"
+ROOT_DIR="$(cd "$(dirname $(dirname "${BASH_SOURCE[0]}"))" && pwd)"
+
+cp "$ROOT_DIR/build/bin/radio-tune" "$TMP_DIR/radio-tune"
+cp "$ROOT_DIR/scripts/assets/info.plist" "$TMP_DIR/info.plist"
+
+cp "$ROOT_DIR/scripts/assets/icon.png" "$TMP_DIR/icon.png"
+cp "$ROOT_DIR/scripts/assets/icon.png" "$TMP_DIR/B11B132B-4A61-4C05-8F4F-2111F454E6C6.png"
+
+/usr/libexec/PlistBuddy -c "Set :version $VERSION" "$TMP_DIR/info.plist"
+
+ditto -ck "$TMP_DIR" "releases/radio_tune-$VERSION.alfredworkflow"

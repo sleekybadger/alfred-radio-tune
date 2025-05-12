@@ -1,4 +1,4 @@
-# Alfred Radio Tune [![Build Status](https://travis-ci.com/sleekybadger/alfred-radio-tune.svg?branch=master)](https://travis-ci.com/sleekybadger/alfred-radio-tune)
+# Alfred Radio Tune [[![Build Status](https://travis-ci.com/sleekybadger/alfred-radio-tune.svg?branch=master)](https://travis-ci.com/sleekybadger/alfred-radio-tune)](https://app.travis-ci.com/sleekybadger/alfred-radio-tune.svg?token=kgpCBFtbVGEaVQJ3osPY&branch=master)
 
 Alfred workflow to instantly identify tune that is playing on yours [myTunerRadio](https://apps.apple.com/ua/app/mytuner-radio-online-player/id881415018). Made with love and [mruby](https://github.com/mruby/mruby).
 
